@@ -13,6 +13,7 @@
 
         body {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -28,16 +29,28 @@
             color: aliceblue;
             font-family: Arial, Helvetica, sans-serif;
             border-radius: 50%;
+            margin-bottom: 40px;
+        }
+
+        #desc {
+            width: 400px;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <h1>Conteudo</h1>
+        <h1 id="titulo">Conteudo !</h1>
+    </div>
+    <div id="desc">
+        <p id="desc1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, similique. Necessitatibus suscipit similique perferendis iusto architecto cum incidunt blanditiis tempora distinctio consequatur, ipsum, quaerat eos eum deleniti. Repellendus, similique vero.</p>
     </div>
     
     <script>
+        let a = document.getElementById("titulo");
+        let b = window.document.getElementsByTagName('desc1')
 
+        alert(b.innerText);
+        alert(a.innerText);
     </script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Soma com JS</title>
+</head>
+<body>
+    <div id="container-box">
+        <div id="container-calc">
+            <h1>Somando com JS</h1>
+                <div id="container-calc-input">
+                    <input type="number" name="txt-1" id="txt-1" placeholder="Digite o 1° número">
+                    <input type="number" name="txt-2" id="txt-2" placeholder="Digite o 2° número">
+                    <input id="btn" type="button" value="Somar" onclick="somar()">
+                    <h2 id="resultado">Resultado !</h2>
+                </div>
+        </div>
+    </div>
+    <script>
+
+        function somar (){
+            var tn1 = document.getElementById('txt-1')
+            var tn2 = document.getElementById('txt-2')
+            var result = document.getElementById('resultado')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+            
+            result.innerHTML = `${soma}`
+        }
+
+    </script>
+</body>
+</html>
